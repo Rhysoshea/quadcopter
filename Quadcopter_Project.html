@@ -12646,6 +12646,7 @@ div#notebook {
 <li>In particular, including a reward of -10 if z = 0 helped the agent realise not to decrease its height. In subsequent episodes the agent would aim to increase its altitude</li>
 <li>If the agent decreases the z-distance between itself and the target to within 2 then a large reward of 5 is given. This proved more effective as it is easier to get within a radius of error to the target rather than a pinpoint in cartesian space</li>
 <li>The two above rewards are both positive and negative terminal rewards, giving the agent a clear target. Apart from this the agent needs a shaped reward for everything in between. This reward is simply the inverse of the distance between the agent and target</li>
+<li>My final reward structure was influenced by the teachings here <a href="https://bons.ai/blog/reward-functions-reinforcement-learning-video">https://bons.ai/blog/reward-functions-reinforcement-learning-video</a>, to simplify the reward function but make it shaped so the agent can learn which direction to go</li>
 </ul>
 
 </div>
